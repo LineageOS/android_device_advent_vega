@@ -1,4 +1,4 @@
-$(call inherit-product, build/target/product/full.mk)
+$(call inherit-product, build/target/product/small_base.mk)
 
 PRODUCT_NAME := full_vega
 PRODUCT_DEVICE := vega
