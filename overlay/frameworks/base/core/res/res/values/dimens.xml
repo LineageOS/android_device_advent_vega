@@ -27,6 +27,8 @@
     <dimen name="app_icon_size">48dip</dimen>
     <dimen name="toast_y_offset">64dip</dimen>
     <!-- Height of the status bar -->
+    <!-- Using pixel (px) instead of dip, since you can never trust the
+    density of tablets - since its inside overlay, its okay this way-->
     <dimen name="status_bar_height">35dip</dimen>
     <!-- Height of the status bar -->
     <dimen name="status_bar_icon_size">35dip</dimen>
