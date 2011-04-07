@@ -1,4 +1,5 @@
-$(call inherit-product, build/target/product/small_base.mk)
+$(call inherit-product, build/target/product/full_base.mk)
+$(call inherit-product, build/target/product/languages_full.mk)
 
 PRODUCT_NAME := full_vega
 PRODUCT_DEVICE := vega
