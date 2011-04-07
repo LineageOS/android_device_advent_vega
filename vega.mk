@@ -1,4 +1,8 @@
+# skips themes and keeps the resulting rom tiny so it fits on /system/ with all languages included
+SKIP_THEMES := yes
+
 $(call inherit-product, build/target/product/small_base.mk)
+$(call inherit-product, build/target/product/languages_full.mk)
 
 PRODUCT_NAME := full_vega
 PRODUCT_DEVICE := vega
