@@ -16,10 +16,13 @@ TARGET_CPU_SMP := true
 TARGET_HAVE_TEGRA_ERRATA_657451 := true
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := harmony
+TARGET_BOOTLOADER_BOARD_NAME := p10an01
 
 # Modem
 TARGET_NO_RADIOIMAGE := true
+
+# Keymapping 
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/advent/vega/recovery_ui.c
 
 # Use Old Style USB Mounting Untill we get kernel source
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
