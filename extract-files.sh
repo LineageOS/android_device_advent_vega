@@ -30,7 +30,9 @@ adb pull /system/lib/libopencorehw.so ../../../vendor/$VENDOR/$DEVICE/proprietar
 adb pull /system/lib/omxplayer.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediarecorder.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediaplugin.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libgps_tmp.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgps.so
+
+## Disabled For Test
+## adb pull /system/lib/libgps_tmp.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgps.so
 
 # Pull needed NV libs
 adb pull /system/lib/libnvodm_dtvtuner.so ../../../vendor/$VENDOR/$DEVICE/proprietary

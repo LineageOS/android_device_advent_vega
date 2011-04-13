@@ -48,8 +48,9 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvos.so:obj/lib/libnvos.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so
+## Disabled For Test
+##    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so
 
 # Standard blobs necessary for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -61,8 +62,9 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libopencorehw.so:system/lib/libopencorehw.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/omxplayer.so:system/lib/omxplayer.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:system/lib/libgps.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so
+## Disabled For Test
+##    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so
 
 # __VENDOR__ blobs for __DEVICE__
 PRODUCT_COPY_FILES += \\

@@ -1,6 +1,3 @@
-# skips themes and keeps the resulting rom tiny so it fits on /system/ with all languages included
-SKIP_THEMES := yes
-
 $(call inherit-product, build/target/product/small_base.mk)
 $(call inherit-product, build/target/product/languages_full.mk)
 
@@ -43,11 +40,10 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
-    $(LOCAL_PATH)/ramdisk/init:root/init \
-    $(LOCAL_PATH)/ramdisk/init_recovery.rc:root/init_recovery.rc \
     $(LOCAL_PATH)/ramdisk/default.prop:root/default.prop\
     $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
+    $(LOCAL_PATH)/kernel/bluetooth.sh:system/etc/bluetooth.sh
 
 # WIFI setup
 PRODUCT_COPY_FILES += \
