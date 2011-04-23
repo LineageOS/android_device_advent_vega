@@ -57,6 +57,10 @@ TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 # Enables Old Sensor Compatibility Seems To Cause CPU Lockup On Vega, New kernel may be required
 TARGET_USES_OLD_LIBSENSORS_HAL:=true
 
+# Enabled For HW Video Decoding
+TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
+TARGET_USE_SOFTWARE_AUDIO_AAC := true
+
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
 # mtd0: 00200000 00020000 "misc"
