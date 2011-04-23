@@ -143,8 +143,6 @@ adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull bt files
 adb pull /system/etc/bluecore6.psr ../../../vendor/$VENDOR/$DEVICE/proprietary 
-adb pull /system/bin/bluetoothd ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/sdptool ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull camera files
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary

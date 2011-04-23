@@ -185,8 +185,7 @@ PRODUCT_COPY_FILES += \\
 # bt files for __DEVICE__
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bluecore6.psr:system/etc/bluecore6.psr \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/bluetoothd:system/bin/bluetoothd \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/sdptool:system/bin/sdptool
+    vendor/__VENDOR__/__DEVICE__/proprietary/bluecore6.psr:system/etc/bluez/bluecore6.psr
 
 # camera files for _DEVICE_
 PRODUCT_COPY_FILES += \\
