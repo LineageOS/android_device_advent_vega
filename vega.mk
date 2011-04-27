@@ -43,7 +43,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/default.prop:root/default.prop\
     $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
-    $(LOCAL_PATH)/kernel/bluetooth.sh:system/etc/bluetooth.sh
+    $(LOCAL_PATH)/kernel/bluetooth.sh:system/etc/bluetooth.sh \
+    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc
 
 # WIFI setup
 PRODUCT_COPY_FILES += \
