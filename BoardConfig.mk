@@ -63,6 +63,9 @@ TARGET_USES_OLD_LIBSENSORS_HAL:=true
 TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
 TARGET_USE_SOFTWARE_AUDIO_AAC := true
 
+# Enabled for HW video recording
+BOARD_USES_HW_MEDIARECORDER := true
+
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
 # mtd0: 00200000 00020000 "misc"
