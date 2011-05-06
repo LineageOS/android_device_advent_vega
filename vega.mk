@@ -32,7 +32,8 @@ PRODUCT_PACKAGES += \
     gralloc.tegra \
     gralloc.tegra \
     sensors.tegra \
-    lights.tegra 
+    lights.tegra \
+    setrecovery
 
 
 PRODUCT_LOCALES += mdpi
