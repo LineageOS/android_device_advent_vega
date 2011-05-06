@@ -49,7 +49,8 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:obj/lib/libhwmediarecorder.so
 
 # Standard blobs necessary for __DEVICE__
 PRODUCT_COPY_FILES += \\
