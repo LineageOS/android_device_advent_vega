@@ -53,6 +53,8 @@ BOARD_EGL_CFG := device/advent/vega/egl.cfg
 BOARD_NO_RGBX_8888 := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 
+# Use screencap to capture frame buffer for ddms
+BOARD_USE_SCREENCAP := true
 
 # Enables Old Sensor Compatibility Seems To Cause CPU Lockup On Vega, New kernel may be required
 TARGET_USES_OLD_LIBSENSORS_HAL:=true
