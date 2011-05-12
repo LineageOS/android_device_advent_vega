@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAFH///yo\u003d",
+        "filename": "setrecovery/setrecovery.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 431
+      },
+      "writtenOn": "2011-05-12T23:17:37Z",
+      "side": 1,
+      "message": "Line 56 should be replaced with something like this to avoid warnings about mismatched types:\n    size_t write_size;\n    ssize_t size;",
+      "revId": "b1caec5988b41f3819aadc5b051db8bc388f5b33",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
