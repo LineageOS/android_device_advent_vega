@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     gralloc.tegra \
     sensors.tegra \
     lights.tegra \
-    screencap
+    screencap \
+    setrecovery
 
 
 PRODUCT_LOCALES += mdpi
@@ -45,7 +46,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/kernel/bluetooth.sh:system/etc/bluetooth.sh \
-    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc
+    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/setrecovery/prebuilt:recovery/root/sbin/setrecovery
 
 # WIFI setup
 PRODUCT_COPY_FILES += \

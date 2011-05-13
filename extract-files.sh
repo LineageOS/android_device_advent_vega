@@ -148,11 +148,6 @@ adb pull /system/etc/bluecore6.psr ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
-# Pull recovery files
-adb pull /system/bin/recovery ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/recovery_2 ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/shuttle_mon ../../../vendor/$VENDOR/$DEVICE/proprietary
-
 # Pull OMX libs
 adb pull /system/lib/libomx_aacdec_sharedlibrary.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libomx_amrdec_sharedlibrary.so ../../../vendor/$VENDOR/$DEVICE/proprietary
