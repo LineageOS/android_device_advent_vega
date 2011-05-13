@@ -81,8 +81,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x077a0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x14b40000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Setting this to avoid boot locks on the system from using the "misc" partition.
-BOARD_HAS_NO_MISC_PARTITION := true
+# Set bootloader message in misc partition for recovery
+TARGET_RECOVERY_PRE_COMMAND := "setrecovery boot-recovery recovery"
 
 # The devices' prebuilt kernel
 TARGET_PREBUILT_KERNEL := device/advent/vega/kernel/zImage

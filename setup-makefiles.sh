@@ -194,13 +194,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_camera.so:system/lib/libnvmm_camera.so
 
-
-# recovery files for __DEVICE__
-PRODUCT_COPY_FILES += \\
-	vendor/__VENDOR__/__DEVICE__/proprietary/recovery:system/bin/recovery \\
-	vendor/__VENDOR__/__DEVICE__/proprietary/recovery_2:system/bin/recovery_2 \\
-	vendor/__VENDOR__/__DEVICE__/proprietary/shuttle_mon:system/bin/shuttle_mon
-
 # OMX libs for __DEVICE__
 PRODUCT_COPY_FILES += \\
    vendor/__VENDOR__/__DEVICE__/proprietary/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \\
