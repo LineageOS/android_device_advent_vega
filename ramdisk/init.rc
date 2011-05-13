@@ -354,6 +354,10 @@ on boot
     chmod 0777 /dev/ttyHS4
     chmod 0777 /dev/ttyS0
 
+    # for setrecovery
+    chown root system /dev/mtd/mtd0
+    chmod 0660 /dev/mtd/mtd0
+
     class_start default
 
 # start ntpd to synchronize time for tablets
@@ -581,7 +585,5 @@ service ueventd /sbin/ueventd
 
 #Ant start
 service shuttled /system/bin/busybox sh /system/etc/bluetooth.sh
-	oneshot
-service otad /system/bin/shuttle_mon
 	oneshot
 #Ant end
