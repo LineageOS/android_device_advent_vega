@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:obj/lib/libhwmediarecorder.so
 
 # Standard blobs necessary for __DEVICE__
@@ -62,8 +61,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libopencorehw.so:system/lib/libopencorehw.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/omxplayer.so:system/lib/omxplayer.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:system/lib/libgps.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so
 
 # __VENDOR__ blobs for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -221,6 +219,18 @@ PRODUCT_COPY_FILES += \\
 # Stage Fright for __DEVICE__
 PRODUCT_COPY_FILES += \\
    vendor/__VENDOR__/__DEVICE__/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so
+
+# RIL for __DEVICE__
+PRODUCT_COPY_FILES += \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libmbm-ril.so:system/lib/libmbm-ril.so
+
+# GPS for __DEVICE__
+PRODUCT_COPY_FILES += \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libmbm-gps.so:obj/lib/libmbm-gps.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libmbm-gps.so:system/lib/libmbm-gps.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libat.so:system/lib/libat.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libsupl.so:system/lib/libsupl.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libgpsctrl.so:system/lib/libgpsctrl.so
 
 EOF
 

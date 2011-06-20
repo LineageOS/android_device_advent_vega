@@ -587,3 +587,9 @@ service ueventd /sbin/ueventd
 service shuttled /system/bin/busybox sh /system/etc/bluetooth.sh
 	oneshot
 #Ant end
+
+# Create GPS device node
+service mbm_config /system/xbin/busybox sh /system/etc/mbm_config.sh
+	oneshot
+
+	start mbm_config

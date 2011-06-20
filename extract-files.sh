@@ -30,7 +30,6 @@ adb pull /system/lib/libopencorehw.so ../../../vendor/$VENDOR/$DEVICE/proprietar
 adb pull /system/lib/omxplayer.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediarecorder.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediaplugin.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libgps_tmp.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgps.so
 
 # Pull needed NV libs
 adb pull /system/lib/libnvodm_dtvtuner.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -172,5 +171,14 @@ adb pull /system/lib/libopencore_rtsp.so ../../../vendor/$VENDOR/$DEVICE/proprie
 
 # Pull Stage Fright
 adb pull /system/lib/libstagefrighthw.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+# Pull RIL
+adb pull /system/lib/libmbm-ril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+# Pull GPS
+adb pull /system/lib/libmbm-gps.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libat.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libsupl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libgpsctrl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ./setup-makefiles.sh

@@ -17,7 +17,6 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-    frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml\
     $(LOCAL_PATH)/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
@@ -30,8 +29,8 @@ PRODUCT_PACKAGES += \
     librs_jni \
     gralloc.default \
     gralloc.tegra \
-    gralloc.tegra \
     sensors.tegra \
+    gps.p10an01 \
     lights.tegra \
     screencap \
     setrecovery
@@ -76,6 +75,11 @@ PRODUCT_COPY_FILES += \
 
 #PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/kernel/cifs.ko:system/lib/modules/cifs.ko
+
+# GPS config for MBM (Ericsson) WWAN/GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/mbm_config.sh:system/etc/mbm_config.sh
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/advent/vega/kernel/zImage

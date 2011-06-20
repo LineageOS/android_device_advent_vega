@@ -53,6 +53,10 @@ BOARD_EGL_CFG := device/advent/vega/egl.cfg
 BOARD_NO_RGBX_8888 := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 
+# GPS
+BOARD_USES_GPSSHIM := true
+BOARD_GPS_LIBRARIES := libmbm-gps
+
 # Use screencap to capture frame buffer for ddms
 BOARD_USE_SCREENCAP := true
 
